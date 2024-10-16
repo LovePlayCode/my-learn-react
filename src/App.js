@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import UserProfile from "./UserProfile";
-
+import { PrimaryButton } from "./Kaibi";
 // Separate API logic
 const submitUserProfile = async (data) => {
   await fetch("/api/user", {
@@ -26,6 +26,7 @@ function App() {
         >
           Learn React
         </a>
+        <PrimaryButton />
       </header>
     </div>
   );
