@@ -1,11 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import UserProfile from "./UserProfile";
 
+// Separate API logic
+const submitUserProfile = async (data) => {
+  await fetch("/api/user", {
+    method: "POST",
+    body: JSON.stringify(data),
+  });
+};
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <UserProfile onSubmit={submitUserProfile} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
