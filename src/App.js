@@ -2,6 +2,9 @@ import logo from "./logo.svg";
 import "./App.css";
 import UserProfile from "./UserProfile";
 import { PrimaryButton } from "./Kaibi";
+import DemoLhl from "./DemoContext";
+import DemoChild from "./DemoChild";
+import Child from "./Child";
 // Separate API logic
 const submitUserProfile = async (data) => {
   await fetch("/api/user", {
@@ -27,7 +30,11 @@ function App() {
           Learn React
         </a>
         <PrimaryButton />
+        <DemoLhl />
       </header>
+      <DemoChild emoChild>
+        <Child />
+      </DemoChild>
     </div>
   );
 }
