@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Child from "./Child";
 
 const DemoChild = ({ children }) => {
   const [count, setCount] = useState(1);
