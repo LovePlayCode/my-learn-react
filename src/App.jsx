@@ -6,6 +6,8 @@ import DemoLhl from "./DemoContext";
 import DemoChild from "./DemoChild";
 import Child from "./Child";
 import ParentComponent from './ParentComponent'
+import ResponsiveInput from './ResponsiveInput'
+
 
 // Separate API logic
 const submitUserProfile = async (data) => {
@@ -39,7 +41,8 @@ function App() {
     //   </DemoChild>
     //   <ParentComponent />
     // </div>
-    <ParentComponent />
+    // <ParentComponent />
+    <ResponsiveInput />
   );
 }
 
