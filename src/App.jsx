@@ -5,10 +5,11 @@ import { PrimaryButton } from "./Kaibi";
 import DemoLhl from "./DemoContext";
 import DemoChild from "./DemoChild";
 import Child from "./Child";
-import ParentComponent from './ParentComponent'
-import ResponsiveInput from './ResponsiveInput'
-
-
+import ParentComponent from "./ParentComponent";
+import ResponsiveInput from "./ResponsiveInput";
+import DemoFn from "./renderLearn/DemoFn";
+import { Son } from "./renderLearn/DemoFn";
+import MyProvider from "./renderLearn/Context";
 // Separate API logic
 const submitUserProfile = async (data) => {
   await fetch("/api/user", {
@@ -42,7 +43,11 @@ function App() {
     //   <ParentComponent />
     // </div>
     // <ParentComponent />
-    <ResponsiveInput />
+    // <ResponsiveInput />
+    // <DemoFn>
+    //   <Son />
+    // </DemoFn>
+    <MyProvider />
   );
 }
 
